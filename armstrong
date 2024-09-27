@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include <math.h>
+int main(){
+	int n,rem,k;
+	int arm = 0;
+    int length;
+	printf("enter  a number:");
+	scanf("%d",&n);
+	k = n;
+		printf("enter the length of:");
+	scanf("%d",&length);
+	while(n!=0){
+		rem = n%10;
+		arm = arm + pow(rem,length);
+		n = n/10;
+	}
+	if ( arm = k){
+		printf("it is a armstrong number");
+	}
+	else {
+		printf("it is not an armstrong number");
+	}
+}
