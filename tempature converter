@@ -1,0 +1,21 @@
+#include<stdio.h>
+ int main (){
+ 	float temp;
+ 	float fahrenheat;
+ 	float celsius; 
+ 	char type;
+ 	printf("enter the temperature");
+ 	scanf("%f",&temp);
+	printf("enter type of temperature scale:");
+	scanf(" %c",&type);
+ 	celsius = 5*(temp - 32)/9;
+ 	fahrenheat = (9*temp/5)+32;
+ 
+ 	if(type == 'f'){
+ 		printf("%f",celsius);
+	 }
+	else if (type == 'c')
+	  	printf("%f",fahrenheat);
+ 	
+ 	
+ }
